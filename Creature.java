@@ -124,12 +124,29 @@ public class Creature {
     public void step(){} 
     public void takeAction(){}
 
+   public void jump(int j){
+    int i = getDir();
+    if (i == 0){
+        this.point.y-=j;
+    }
+    if( i== 1){
+        this.point.x +=j;
+    }
+
+     if (i==2){
+            this.point.y+=j;
+     }
+
+     if(i==3){
+            this.point.x-=j;
+     }
+}
 
     
     //To String so you can output a creature to the plotter
     public String toString() {
         //output in (x,y) format
-        return ""+this.point.x+"e "+this.point.y+" "+lab;
+        return ""+this.point.x +" "+this.point.y+" "+lab;
     }
 
 }
