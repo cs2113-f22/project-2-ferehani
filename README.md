@@ -28,6 +28,7 @@ What level simulation did you achieve
 
 Level : [0,1,2,3,4] <-- choose one!
 
+level 4
 If you completed Level 4, describe the additional creature you added to the simulation.
 
 [ANSWER HERE]
